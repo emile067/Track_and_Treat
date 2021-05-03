@@ -42,7 +42,8 @@
             <div class="container">
                 <div class="masthead-subheading">Murakaza Neza</div>
                 <div class="masthead-subheading text-uppercase">Tubahuza n'ibyo mwataye Ntakiguzi</div>
-                <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Serivise Dutanga</a>
+                <button class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" data-toggle="modal" data-target="#recover-item">Lost an item?</button>
+                <button class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" data-toggle="modal" data-target="#recover-item">Found an item?</button>
             </div>
         </header>
         
@@ -433,6 +434,93 @@
                         </div>
                     </div>
                 </div>
+            </div>
+        </div>
+        <!-- Item modals -->
+        <!--Report item Modal -->
+        <div class="modal fade" id="recover-item" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Report an item</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Item type:</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>Identity card</option>
+                              <option>Passport</option>
+                              <option>Permit</option>
+                              <option>Driving license</option>
+                              <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="item-name" class="col-form-label">Item identification:</label>
+                          <input type="text" class="form-control" id="item-identification">
+                        </div>
+                        <div class="form-group">
+                            <label for="item-name" class="col-form-label">Contact:</label>
+                            <input type="text" class="form-control" id="founder-contact">
+                          </div>
+                        <div class="form-group">
+                          <label for="message-text" class="col-form-label">Message:</label>
+                          <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
+            </div>
+        </div>
+        <!--Lost item Modal -->
+        <div class="modal fade" id="recover-item" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">Lost item</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="exampleFormControlSelect1">Item type:</label>
+                            <select class="form-control" id="exampleFormControlSelect1">
+                              <option>Identity card</option>
+                              <option>Passport</option>
+                              <option>Permit</option>
+                              <option>Driving license</option>
+                              <option>Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                          <label for="item-name" class="col-form-label">Item identification:</label>
+                          <input type="text" class="form-control" id="item-identification">
+                        </div>
+                        <div class="form-group">
+                            <label for="item-name" class="col-form-label">Contact:</label>
+                            <input type="text" class="form-control" id="owner-contact">
+                          </div>
+                        <div class="form-group">
+                          <label for="message-text" class="col-form-label">Message:</label>
+                          <textarea class="form-control" id="message-text"></textarea>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+                </div>
+            </div>
             </div>
         </div>
         <!-- Bootstrap core JS-->
